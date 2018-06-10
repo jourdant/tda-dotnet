@@ -1,8 +1,9 @@
-using System;
+using System.Collections.Generic;
+using Jourdant.Tda.Models.Instruments;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace Jourdant.Tda.Models 
+namespace Jourdant.Tda.Models.Accounts
 {
     public class Account 
     {
@@ -13,8 +14,9 @@ namespace Jourdant.Tda.Models
         public bool IsDayTrader { get; set; }
         public bool IsClosingOnlyRestricted { get; set; }
 
-        //positions
-        //orderstrategies
+        public List<Position> Positions { get; set; }
+        //TODO: Implement OrderStrategies
+
         public InitialBalances InitialBalances { get; set; }
     }
 }

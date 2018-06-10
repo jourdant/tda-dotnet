@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Jourdant.Tda
+﻿namespace Jourdant.Tda
 {
     public class TdaHttpClient
     {
